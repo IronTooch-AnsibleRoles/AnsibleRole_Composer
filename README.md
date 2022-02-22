@@ -1,7 +1,7 @@
-role_name
+Composer
 =========
 
-role_description
+A role designed to install Composer in the /usr/local/bin folder.
 
 Requirements
 ------------
@@ -11,10 +11,7 @@ None
 Role Variables
 --------------
 
-- **var1**: EXPLANATION
-  - Defaults to *default1*
-- **var2**: EXPLANATION
-  - Defaults to *default2*
+None necessary
 
 Dependencies
 ------------
@@ -25,29 +22,8 @@ Example Playbooks
 ----------------
 
 ```yaml
-# EXPLANATION
-    - role: 'formal_role'
-      vars:
-        var1: "myapp"
-```
-
-```yaml
-# EXPLANATION
-    - role: 'formal_role'
-      vars:
-        var1: "myapp"
-        var2: "myapp"
-        var3: "myapp"
-        var4: "myapp"
-```
-
-```yaml
-# EXPLANATION
-    - role: 'formal_role'
-      vars:
-        var1: "myapp"
-        var2: "myapp"
-        var3: "myapp"
+# Install Composer and put in /usr/local/bin to be able to run from path.
+    - role: 'irontooch.composer'
 ```
 
 License
@@ -58,4 +34,4 @@ GPL v3.0
 Author Information
 ------------------
 
-Author is Author
+Author is IronTooch

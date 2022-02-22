@@ -1,8 +1,8 @@
 galaxy_info:
-  role_name: my_role
+  role_name: composer
   namespace: irontooch
   author: IronTooch
-  description: App_Description
+  description: A role designed to install Composer in the /usr/local/bin folder
   license: GPL-3.0-only
   min_ansible_version: 2.1
 
@@ -13,8 +13,4 @@ galaxy_info:
 
   galaxy_tags: []
 
-dependencies: []  # Remove [] if roles are included, below
-#   - role: 'my_namespace.my_role'
-#     vars:
-#       my_var: "my_value"
-
+dependencies: []
