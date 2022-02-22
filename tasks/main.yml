@@ -15,9 +15,18 @@
 - name: Install Composer
   block:
 
-    - name: Install dependencies
-      ansible.builtin.include_tasks:
-        file: "01_install_dependencies.yml"
+    - name: Install Dependency packages
+      package:
+        name:
+          - acl
+          - sudo
+          - python3-pexpect
+          - php
+        state: present
+      register: apt_status
+      until: apt_status is success
+      delay: 6
+      retries: 10
 
     # tasks file for su_composer
     - name: Copy Composer download file to /tmp directory
